@@ -17,6 +17,6 @@ class HomeRouter {
     }
 }
 
-const homeRouter = new HomeRouter();
+var homeRouter = new HomeRouter();
 
 export default homeRouter.router;

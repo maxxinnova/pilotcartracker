@@ -15,7 +15,7 @@ export interface ILoadCoveredMessage extends Document {
 export interface ILoadCoveredMessageModel extends Model<ILoadCoveredMessage> {
 }
 
-const schema = new Schema({
+var schema = new Schema({
     mid: {
         type: String,
         required: true
@@ -53,4 +53,4 @@ const schema = new Schema({
     }
 });
 
-export const message = mongoose.model<ILoadCoveredMessage>("Message", schema) as ILoadCoveredMessageModel;
+export var message = mongoose.model<ILoadCoveredMessage>("Message", schema) as ILoadCoveredMessageModel;

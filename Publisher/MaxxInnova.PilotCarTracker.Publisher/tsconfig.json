@@ -8,7 +8,10 @@
     "target": "es6",
     "typeRoots": [
       "/node_modules/@types"
-    ]
+    ],
+    "strict": false,
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true
   },
   "exclude": [
     "node_modules"

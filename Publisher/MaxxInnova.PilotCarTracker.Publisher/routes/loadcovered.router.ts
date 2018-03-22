@@ -13,7 +13,7 @@ class LoadCoveredRouter {
     private registerRoutes() {
         this.router.get("/", async (req: Request, res: Response) => {
             try {
-                const controller = new LoadCoveredController({ request: req, response: res });
+                var controller = new LoadCoveredController({ request: req, response: res });
                 await controller.get();
             } catch (e) {
 
@@ -22,7 +22,7 @@ class LoadCoveredRouter {
 
         this.router.get("/:id", async (req: Request, res: Response) => {
             try {
-                const controller = new LoadCoveredController({ request: req, response: res });
+                var controller = new LoadCoveredController({ request: req, response: res });
                 await controller.get(req.query.id);
             } catch (e) {
 
@@ -31,7 +31,7 @@ class LoadCoveredRouter {
 
         this.router.post("/", webhook({ validate: false }), async (req: Request, res: Response) => {
             try {
-                const controller = new LoadCoveredController({ request: req, response: res });
+                var controller = new LoadCoveredController({ request: req, response: res });
                 await controller.post(req.body);
             } catch (e) {
 
@@ -40,6 +40,6 @@ class LoadCoveredRouter {
     }
 }
 
-const loadcoveredRouter = new LoadCoveredRouter();
+var loadcoveredRouter = new LoadCoveredRouter();
 
 export default loadcoveredRouter.router;

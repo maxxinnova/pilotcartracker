@@ -11,12 +11,13 @@
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <NameOfLastUsedPublishProfile>pctpublisher-test - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0761287c-1d21-43fd-9645-322e08ed84e9</ProjectGuid>
+    <ProjectGuid>{218085e5-e038-42d1-b68a-a469908dd466}</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
     <StartupFile>app.ts</StartupFile>
@@ -36,6 +37,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="controllers\loadcovered.controller.ts">
       <SubType>Code</SubType>
     </Content>
@@ -43,6 +45,10 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="Web.config" />
+    <None Include="pctpublisher - Web Deploy.pubxml" />
+    <None Include="pctpublisher-test - Web Deploy.pubxml" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json">

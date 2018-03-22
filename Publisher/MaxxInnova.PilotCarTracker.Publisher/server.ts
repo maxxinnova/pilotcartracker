@@ -5,7 +5,7 @@ import * as logger from "morgan"
 import * as path from "path"
 import * as errorHandler from "errorhandler"
 
-const serveFavicon = require("serve-favicon");
+var serveFavicon = require("serve-favicon");
 
 import homeRouter from "./routes/home.router"
 import loadcoveredRouter from "./routes/loadcovered.router"

@@ -8,7 +8,7 @@ export class LoadCoveredController {
     }
 
     async post(request: ISmsRequest) {
-        const data = {
+        var data = {
             mid: uuid(),
             sid: request.SmsSid,
             from: request.From,
@@ -26,7 +26,7 @@ export class LoadCoveredController {
     }
 
     async get(id?: number) {
-        const data = [];
+        var data = [];
 
         this.context
             .response
