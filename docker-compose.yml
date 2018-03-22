@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  maxxinnova.pilotcartracker.manager:
+    image: maxxinnova.pilotcartracker.manager
+    build:
+      context: .
+      dockerfile: Manager\MaxxInnova.PilotCarTracker.Manager\Dockerfile
