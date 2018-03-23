@@ -38,6 +38,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include=".travis.yml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="controllers\loadcovered.controller.ts">
       <SubType>Code</SubType>
     </Content>
@@ -80,6 +83,7 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="config.ts" />
+    <TypeScriptCompile Include="copyStaticAssets.ts" />
     <TypeScriptCompile Include="models\database.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
